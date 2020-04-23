@@ -16,7 +16,7 @@ Application developed to work as a fully functional pocket calculator. It is par
 
 ## Run Application
 
-Take a look at this application running through [this link](http://htmlpreview.github.io/?https://github.com/juliolmuller/jCalc-2/blob/master/index.html).
+Take a look at this application running through [this link](https://juliolmuller.github.io/jcalc-2/).
 
 ## Resources
 
@@ -34,3 +34,15 @@ Take a look at this application running through [this link](http://htmlpreview.g
   - `Backspace` to CE (clear current entry)
   - `Escape` to AC (clear all operation)
 - Copy (`Ctrl+C`) & Paste (`Ctrl+V`) support;
+
+## Project setup
+
+Run `npm install` to download all dependecnies and get the project set up.
+
+## Development server
+
+Run `npm run serve` for a dev server. Navigate to `http://localhost:8080/`. The app will automatically reload if you change any of the source files.
+
+## Build
+
+Run `npm run build` to build the project. The build artifacts will be stored in the `docs/` directory.
