@@ -1,15 +1,34 @@
 <template>
   <div class="calculator">
     <Display value="1234" />
+    <Button label="AC" triple />
+    <Button label="/" operator />
+    <Button label="7" />
+    <Button label="8" />
+    <Button label="9" />
+    <Button label="*" operator />
+    <Button label="4" />
+    <Button label="5" />
+    <Button label="6" />
+    <Button label="-" operator />
+    <Button label="3" />
+    <Button label="2" />
+    <Button label="1" />
+    <Button label="+" operator />
+    <Button label="0" double />
+    <Button label="." />
+    <Button label="=" operator />
   </div>
 </template>
 
 <script>
+import Button from './Button'
 import Display from './Display'
 
 export default {
 
   components: {
+    Button,
     Display,
   },
 }
