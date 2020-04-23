@@ -1,6 +1,6 @@
 <template>
   <div class="calculator">
-    <Display value="1234" />
+    <Display :value="displayValue" />
     <Button label="AC" @click="clearMemory" triple />
     <Button label="/" @click="setOperation" operator />
     <Button label="7" @click="addDigit" />
@@ -32,15 +32,32 @@ export default {
     Display,
   },
 
+  data: () => ({
+    displayValue: '0',
+    clearDisplay: false,
+    operation: null,
+    operands: [0, 0],
+    current: 0,
+  }),
+
   methods: {
     clearMemory() {
-      console.log('Memória limpa')
+      Object.assign(this.$data, this.$options.data())
     },
     setOperation(operator) {
       console.log('Operação', operator)
     },
     addDigit(digit) {
-      console.log('Dígito', digit)
+      if (digit === '.' && this.displayValue.includes('.')) {
+        return
+      }
+      const clearDisplay = (this.displayValue === '0') || this.clearDisplay
+      const currentValue = clearDisplay ? '' : this.displayValue
+      this.displayValue = `${currentValue}${digit}`
+      this.clearDisplay = false
+      if (digit !=='.') {
+        this.operands[this.current] = Number(this.displayValue)
+      }
     },
   },
 }
