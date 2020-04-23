@@ -8,19 +8,19 @@
 export default {
 
   props: {
-    value: String,
+    value: [Number, String],
   },
 }
 </script>
 
-<style scoped>
+<style>
 .display {
   grid-column: span 4;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  align-items: flex-end;
   background-color: #0004;
-  padding: 20px;
+  padding: 12px;
   font-size: 2.2em;
   overflow: hidden;
 }
