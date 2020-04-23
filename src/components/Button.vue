@@ -1,7 +1,9 @@
 <template>
-  <button class="button" :class="{ double, triple, operator }">
-    {{ label }}
-  </button>
+  <button
+    class="button"
+    :class="{ double, triple, operator }"
+    @click="$emit('click', label)"
+  >{{ label }}</button>
 </template>
 
 <script>
