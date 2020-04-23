@@ -39,11 +39,28 @@
       "parser": "babel-eslint"
     },
     "rules": {
+      "arrow-body-style": ["error", "as-needed"],
+      "arrow-parens": ["error", "always"],
       "comma-dangle": ["error", "always-multiline"],
+      "indent": ["error", 2, {
+        "FunctionDeclaration": {"body": 1, "parameters": 2},
+        "SwitchCase": 1
+      }],
       "no-console": "warn",
+      "no-param-reassign": ["warn", {
+        "props": false
+      }],
+      "no-shadow": ["warn", {
+        "builtinGlobals": false
+      }],
       "quotes": ["error", "single"],
+      "quote-props": ["error", "consistent-as-needed"],
       "semi": ["error", "never"],
-      "space-before-function-paren": "off"
+      "space-before-function-paren": ["error", {
+        "anonymous": "always",
+        "named": "never",
+        "asyncArrow": "always"
+      }]
     }
   },
   "babel": {
