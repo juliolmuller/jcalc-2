@@ -4,8 +4,8 @@
 - **Developed by:** [Julio L. Muller](https://www.linkedin.com/in/juliolmuller/)
 - **Project proposed by:** [Cod3r](https://www.cod3r.com.br/)
 - **Released on:** Apr 23, 2020
-- **Updated on:** Apr 23, 2020
-- **Latest version:** 2.0.0
+- **Updated on:** Jul 21, 2020
+- **Latest version:** 2.0.1
 - **License:** *MIT*
 
 ## Overview
@@ -37,7 +37,7 @@ Take a look at this application running through [this link](https://juliolmuller
 
 ## Project setup
 
-Run `npm install` to download all dependecnies and get the project set up.
+Run `npm install` to download all dependencies and get the project set up.
 
 ## Development server
 
