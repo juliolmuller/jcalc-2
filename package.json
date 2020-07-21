@@ -1,6 +1,6 @@
 {
   "name": "jcalc-2",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "license": "MIT",
   "author": {
     "name": "Julio L. M",
@@ -16,9 +16,9 @@
     "lint": "vue-cli-service lint"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^4.3.0",
-    "@vue/cli-plugin-eslint": "^4.3.0",
-    "@vue/cli-service": "^4.3.0",
+    "@vue/cli-plugin-babel": "^4.4.6",
+    "@vue/cli-plugin-eslint": "^4.4.6",
+    "@vue/cli-service": "^4.4.6",
     "babel-eslint": "^10.1.0",
     "core-js": "^3.6.4",
     "eslint": "^6.7.2",
@@ -39,28 +39,62 @@
       "parser": "babel-eslint"
     },
     "rules": {
-      "arrow-body-style": ["error", "as-needed"],
-      "arrow-parens": ["error", "always"],
-      "comma-dangle": ["error", "always-multiline"],
-      "indent": ["error", 2, {
-        "FunctionDeclaration": {"body": 1, "parameters": 2},
-        "SwitchCase": 1
-      }],
+      "arrow-body-style": [
+        "error",
+        "as-needed"
+      ],
+      "arrow-parens": [
+        "error",
+        "always"
+      ],
+      "comma-dangle": [
+        "error",
+        "always-multiline"
+      ],
+      "indent": [
+        "error",
+        2,
+        {
+          "FunctionDeclaration": {
+            "body": 1,
+            "parameters": 2
+          },
+          "SwitchCase": 1
+        }
+      ],
       "no-console": "warn",
-      "no-param-reassign": ["warn", {
-        "props": false
-      }],
-      "no-shadow": ["warn", {
-        "builtinGlobals": false
-      }],
-      "quotes": ["error", "single"],
-      "quote-props": ["error", "consistent-as-needed"],
-      "semi": ["error", "never"],
-      "space-before-function-paren": ["error", {
-        "anonymous": "always",
-        "named": "never",
-        "asyncArrow": "always"
-      }]
+      "no-param-reassign": [
+        "warn",
+        {
+          "props": false
+        }
+      ],
+      "no-shadow": [
+        "warn",
+        {
+          "builtinGlobals": false
+        }
+      ],
+      "quotes": [
+        "error",
+        "single"
+      ],
+      "quote-props": [
+        "error",
+        "consistent-as-needed"
+      ],
+      "semi": [
+        "error",
+        "never"
+      ],
+      "space-before-function-paren": [
+        "error",
+        {
+          "anonymous": "always",
+          "named": "never",
+          "asyncArrow": "always"
+        }
+      ]
     }
   },
   "babel": {
