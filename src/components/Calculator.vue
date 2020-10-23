@@ -58,7 +58,7 @@ export default {
         } catch (e) {
           this.$emit('error', e)
         }
-        this.displayValue = this.operands[0]
+        [this.displayValue] = this.operands
         this.operation = isEquals ? this.operation : operator
         this.current = isEquals ? 0 : 1
         this.clearDisplay = isEquals
