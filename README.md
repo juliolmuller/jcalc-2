@@ -2,12 +2,24 @@
   :1234: jCalc 2 - My Second Calculator
 </h1>
 
-- **Project proposed by:** [Cod3r](https://www.cod3r.com.br/)
-- **Project developed by:** [Julio L. Muller](https://github.com/juliolmuller)
-- **Released on:** Apr 23, 2020
-- **Updated on:** Oct 23, 2020
-- **Latest version:** 2.0.2
-- **License:** MIT
+<p align="center">
+  <a href="#trophy-lessons-learned">Lessons Learned</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#hammer-technologies--resources">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#bell-setting-up-the-environment">Environment Setup</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#zap-features-implementations">Features</a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/static/v1?labelColor=000000&color=426b7c&label=created%20at&message=Apr%202020" alt="Creation Date" />
+
+  <img src="https://img.shields.io/github/last-commit/juliolmuller/jcalc-2?label=updated%20at&labelColor=000000&color=426b7c" alt="Update Date" />
+
+  <img src="https://img.shields.io/github/v/tag/juliolmuller/jcalc-2?label=latest%20version&labelColor=000000&color=426b7c" alt="Latest Version" />
+
+  <img src="https://img.shields.io/static/v1?labelColor=000000&color=426b7c&label=PRs&message=welcome" alt="Pull Requests Welcome" />
+
+  <img src="https://img.shields.io/github/license/juliolmuller/jcalc-2?labelColor=000000&color=426b7c" alt="Project License" />
+</p>
 
 ![Application snapshot](./src/assets/app-overview.jpg)
 
@@ -39,14 +51,14 @@ $ npm start     # Run development server
 $ npm run build # Build files for production
 ```
 
-# :zap: Features Implementations
+## :zap: Features Implementations
 
-:black_square_button: Upgrade to Vue 3 and use Composition API;
-:ballot_box_with_check: Overall layout and design;
-:ballot_box_with_check: Traditional calculator operations (`+`, `-`, `*`, `/` and *CLEAR*);
-:ballot_box_with_check: Continuous calculations by pressing `=` repeatedly;
-:black_square_button: Continuous calculations by chaining other operations (without pressing `=`);
-:black_square_button: Support to keyboard input;
-:black_square_button: Support to copy & paste by pressing `Ctrl + C` & `Ctrl + V`;
-:black_square_button: Sounds on typing (with icon to enable/disable);
-:black_square_button: Add automated testing (unit and E2E);
+- [ ] Upgrade to Vue 3 and use Composition API;
+- [x] Overall layout and design;
+- [x] Traditional calculator operations (`+`, `-`, `*`, `/` and *CLEAR*);
+- [x] Continuous calculations by pressing `=` repeatedly;
+- [ ] Continuous calculations by chaining other operations (without pressing -=`);
+- [ ] Support to keyboard input;
+- [ ] Support to copy & paste by pressing `Ctrl + C` & `Ctrl + V`;
+- [ ] Sounds on typing (with icon to enable/disable);
+- [ ] Add automated testing (unit and E2E);
