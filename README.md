@@ -4,8 +4,8 @@
 
 <p align="center">
   <a href="#trophy-lessons-learned">Lessons Learned</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#hammer-technologies--resources">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#bell-setting-up-the-environment">Environment Setup</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#rocket-technologies--resources">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#hammer-setting-up-the-environment">Environment Setup</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#zap-features-implementations">Features</a>
 </p>
 
@@ -32,7 +32,7 @@ Application developed during [Cod3r's official Vue.js course](https://www.udemy.
 - Vue.js 2 components communication;
 - CSS Grid;
 
-## :hammer: Technologies & Resources
+## :rocket: Technologies & Resources
 
 **Frontend:**
 - Vue.js 2
@@ -41,7 +41,7 @@ Application developed during [Cod3r's official Vue.js course](https://www.udemy.
 - Visual Studio Code
 - Vue CLI & Node.js routines
 
-## :bell: Setting up the Environment
+## :hammer: Setting up the Environment
 
 Make sure to have **Node.js 10+** installed in your machine and its **npm** available in the command line, then use the following routines:
 
