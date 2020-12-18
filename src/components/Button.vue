@@ -15,6 +15,8 @@ export default {
     double: Boolean,
     triple: Boolean,
   },
+
+  emits: ['click'],
 }
 </script>
 

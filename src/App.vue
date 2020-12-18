@@ -1,8 +1,6 @@
 <template>
-  <div id="app">
-    <h1>jCalc</h1>
-    <Calculator />
-  </div>
+  <h1>jCalc</h1>
+  <Calculator />
 </template>
 
 <script>

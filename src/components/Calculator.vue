@@ -22,6 +22,7 @@
 </template>
 
 <script>
+import { ref } from 'vue'
 import Button from './Button'
 import Display from './Display'
 
@@ -32,48 +33,70 @@ export default {
     Display,
   },
 
-  data: () => ({
-    displayValue: '0',
-    clearDisplay: false,
-    operation: null,
-    operands: [0, 0],
-    current: 0,
-  }),
+  emits: ['error'],
 
-  methods: {
-    clearMemory() {
-      Object.assign(this.$data, this.$options.data())
-    },
-    setOperation(operator) {
+  setup(_, { emit }) {
+    const displayValue = ref('0')
+    const clearDisplay = ref(false)
+    const operation = ref(null)
+    const operands = ref([0, 0])
+    const current = ref(0)
+
+    const clearMemory = () => {
+      displayValue.value = '0'
+      clearDisplay.value = false
+      operation.value = null
+      operands.value = [0, 0]
+      current.value = 0
+    }
+
+    const setOperation = (operator) => {
       const isEquals = (operator === '=')
-      if (!isEquals && this.current === 0) {
-        this.operation = operator
-        this.current = 1
-        this.clearDisplay = true
+
+      if (!isEquals && current.value === 0) {
+        operation.value = operator
+        clearDisplay.value = true
+        current.value = 1
       } else {
         try {
-          this.operands[0] = eval(
-            `${this.operands[0]} ${this.operation} ${this.operands[1]}`,
+          operands.value[0] = eval(
+            `${operands.value[0]} ${operation.value} ${operands.value[1]}`,
           )
-        } catch (e) {
-          this.$emit('error', e)
+        } catch (error) {
+          emit('error', error)
         }
-        [this.displayValue] = this.operands
-        this.operation = isEquals ? this.operation : operator
-        this.current = isEquals ? 0 : 1
-        this.clearDisplay = isEquals
+
+        // eslint-disable-next-line prefer-destructuring
+        displayValue.value = operands.value[0]
+        operation.value = isEquals ? operation.value : operator
+        current.value = isEquals ? 0 : 1
+        clearDisplay.value = isEquals
       }
-    },
-    addDigit(digit) {
-      if (digit === '.' && this.displayValue.includes('.')) {
+    }
+
+    const addDigit = (digit) => {
+      if (digit === '.' && displayValue.value.includes('.')) {
         return
       }
-      const clearDisplay = (this.displayValue === '0') || this.clearDisplay
-      const currentValue = clearDisplay ? '' : this.displayValue
-      this.displayValue = `${currentValue}${digit}`
-      this.operands[this.current] = this.displayValue
-      this.clearDisplay = false
-    },
+
+      const isDisplayClear = (displayValue.value === '0') || clearDisplay.value
+      const currentValue = isDisplayClear ? '' : displayValue.value
+
+      displayValue.value = `${currentValue}${digit}`
+      operands.value[current.value] = displayValue.value
+      clearDisplay.value = false
+    }
+
+    return {
+      displayValue,
+      clearDisplay,
+      operation,
+      operands,
+      current,
+      clearMemory,
+      setOperation,
+      addDigit,
+    }
   },
 }
 </script>
