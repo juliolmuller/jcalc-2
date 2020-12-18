@@ -29,13 +29,14 @@ Application developed during [Cod3r's official Vue.js course](https://www.udemy.
 
 ## :trophy: Lessons Learned
 
-- Vue.js 2 components communication;
+- (~~Vue.js 2~~) Vue 3 components communication;
+- Vue 3 Composition API;
 - CSS Grid;
 
 ## :rocket: Technologies & Resources
 
 **Frontend:**
-- Vue.js 2
+- (~~Vue.js 2~~) Vue.js 3
 
 **Development:**
 - Visual Studio Code
@@ -46,14 +47,15 @@ Application developed during [Cod3r's official Vue.js course](https://www.udemy.
 Make sure to have **Node.js 10+** installed in your machine and its **npm** available in the command line, then use the following routines:
 
 ```bash
-$ npm install   # Download dependencies
-$ npm start     # Run development server
-$ npm run build # Build files for production
+$ npm install     # Download dependencies
+$ npm start       # Run development server
+$ npm run build   # Build files for production
 ```
 
 ## :zap: Features Implementations
 
-- [ ] Upgrade to Vue 3 and use Composition API;
+- [x] Upgrade to Vue 3 and use Composition API;
+- [ ] Convert project to TypeScript;
 - [x] Overall layout and design;
 - [x] Traditional calculator operations (`+`, `-`, `*`, `/` and *CLEAR*);
 - [x] Continuous calculations by pressing `=` repeatedly;
