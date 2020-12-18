@@ -1,34 +1,32 @@
 {
   "name": "jcalc-2",
-  "description": "MacOS calculator clone built with Vue.js and CSS Grid.",
-  "version": "2.0.2",
+  "version": "2.0.3",
+  "private": true,
   "license": "MIT",
-  "author": {
-    "name": "Julio L. M",
-    "url": "https://github.com/juliolmuller"
-  },
-  "repository": {
-    "url": "https://github.com/juliolmuller/stock-trader",
-    "type": "portfolio"
-  },
+  "author": "Julio L. Muller",
   "scripts": {
     "start": "vue-cli-service serve --open",
-    "build": "vue-cli-service build --dest docs",
+    "build": "vue-cli-service build --dest docs --modern",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "core-js": "^3.6.4",
-    "vue": "^2.6.12"
+    "core-js": "^3.8.1",
+    "vue": "^3.0.4"
   },
   "devDependencies": {
-    "@lacussoft/eslint-config-standard": "^1.0.9",
-    "@vue/cli-plugin-babel": "^4.5.8",
-    "@vue/cli-plugin-eslint": "^4.5.8",
-    "@vue/cli-service": "^4.5.8",
+    "@lacussoft/eslint-config": "^1.0.0",
+    "@vue/cli-plugin-babel": "^4.5.9",
+    "@vue/cli-plugin-eslint": "^4.5.9",
+    "@vue/cli-service": "^4.5.9",
+    "@vue/compiler-sfc": "^3.0.4",
     "babel-eslint": "^10.1.0",
-    "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^6.2.2",
-    "vue-template-compiler": "^2.6.12"
+    "eslint": "^7.15.0",
+    "eslint-plugin-vue": "^7.3.0"
+  },
+  "babel": {
+    "presets": [
+      "@vue/cli-plugin-babel/preset"
+    ]
   },
   "eslintConfig": {
     "root": true,
@@ -36,9 +34,8 @@
       "node": true
     },
     "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended",
-      "@lacussoft/standard"
+      "plugin:vue/vue3-essential",
+      "@lacussoft"
     ],
     "parserOptions": {
       "parser": "babel-eslint"
@@ -46,11 +43,6 @@
     "rules": {
       "no-eval": "off"
     }
-  },
-  "babel": {
-    "presets": [
-      "@vue/cli-plugin-babel/preset"
-    ]
   },
   "browserslist": [
     "> 1%",
