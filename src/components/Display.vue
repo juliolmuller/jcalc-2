@@ -6,6 +6,7 @@
 
 <script>
 export default {
+  name: 'Display',
 
   props: {
     value: [Number, String],

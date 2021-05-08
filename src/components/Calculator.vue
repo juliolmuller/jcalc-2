@@ -27,6 +27,7 @@ import Button from './Button'
 import Display from './Display'
 
 export default {
+  name: 'Calculator',
 
   components: {
     Button,
