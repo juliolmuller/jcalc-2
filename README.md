@@ -21,7 +21,7 @@
   <img src="https://img.shields.io/github/license/juliolmuller/jcalc-2?labelColor=000000&color=426b7c" alt="Project License" />
 </p>
 
-![Application snapshot](./src/assets/app-overview.jpg)
+![Application snapshot](./.github/app-overview.jpg)
 
 Application developed during [Cod3r's official Vue.js course](https://www.udemy.com/course/vue-js-completo/), on Udemy, in order to create a clone of MacOS calculator with Vue.js and the amazing CSS Grid to make development way smoother for elements positioning.
 
