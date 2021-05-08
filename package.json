@@ -22,25 +22,6 @@
     "eslint": "^7.26.0",
     "eslint-config-lacussoft": "^1.0.0"
   },
-  "babel": {
-    "presets": [
-      "@vue/cli-plugin-babel/preset"
-    ]
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "lacussoft",
-      "lacussoft/vue"
-    ],
-    "parser": "babel-eslint",
-    "rules": {
-      "no-eval": "off"
-    }
-  },
   "browserslist": [
     "> 1%",
     "last 2 versions",
