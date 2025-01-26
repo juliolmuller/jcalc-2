@@ -23,8 +23,8 @@
 
 <script>
 import { ref } from 'vue'
-import Button from './Button'
-import Display from './Display'
+import Button from './Button.vue'
+import Display from './Display.vue'
 
 export default {
   name: 'Calculator',
