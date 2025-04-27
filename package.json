@@ -8,17 +8,23 @@
     "Julio L. Muller"
   ],
   "homepage": "https://jcalc2.vercel.app/",
+  "type": "module",
   "scripts": {
     "dev": "vite --open",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint --fix src/ eslint.config.js vite.config.js"
   },
   "dependencies": {
     "vue": "^3.5.13"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.2.3",
+    "eslint": "^9.25.1",
+    "eslint-config-any": "^1.1.0",
     "rollup-plugin-analyzer": "^4.0.0",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.3",
     "vite": "^6.3.3"
   }
 }
