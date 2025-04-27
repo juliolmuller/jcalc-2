@@ -1,18 +1,17 @@
+<script setup>
+defineProps({
+  value: {
+    type: [Number, String],
+    required: true,
+  },
+});
+</script>
+
 <template>
   <div class="display">
     {{ value }}
   </div>
 </template>
-
-<script>
-export default {
-  name: 'Display',
-
-  props: {
-    value: [Number, String],
-  },
-}
-</script>
 
 <style>
 .display {
