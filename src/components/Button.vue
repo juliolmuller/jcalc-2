@@ -1,25 +1,31 @@
-<template>
-  <button
-    class="button"
-    :class="{ double, triple, operator }"
-    @click="$emit('click', label)"
-  >{{ label }}</button>
-</template>
-
-<script>
-export default {
-  name: 'Button',
-
-  props: {
-    label: [Number, String],
-    operator: Boolean,
-    double: Boolean,
-    triple: Boolean,
+<script setup>
+defineProps({
+  label: {
+    type: [Number, String],
+    required: true,
   },
+  operator: {
+    type: Boolean,
+    default: false,
+  },
+  double: {
+    type: Boolean,
+    default: false,
+  },
+  triple: {
+    type: Boolean,
+    default: false,
+  },
+});
 
-  emits: ['click'],
-}
+defineEmits(['click']);
 </script>
+
+<template>
+  <button class="button" :class="{ double, triple, operator }" @click="$emit('click', label)">
+    {{ label }}
+  </button>
+</template>
 
 <style>
 :root {

@@ -1,6 +1,6 @@
-import vue from '@vitejs/plugin-vue'
+import vue from '@vitejs/plugin-vue';
 import rollupAnalyze from 'rollup-plugin-analyzer';
-import { defineConfig } from 'vite'
+import { defineConfig } from 'vite';
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -15,4 +15,4 @@ export default defineConfig({
     },
   },
   plugins: [vue()],
-})
+});
