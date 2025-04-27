@@ -46,7 +46,7 @@ Application developed during Cod3r's official Vue.js course at Udemy (no longer 
 
 ## :hammer: Setting up the Environment
 
-Make sure to have **Node.js 10+** installed in your machine and its **npm** available in the command line, then use the following routines:
+To set up the projects in your environment, make sure to have **Node.js 22+** and **Bun 1.2+** installed on your machine and the `bun` shortcuts available through the command line.
 
 ```bash
 $ bun install     # download dependencies
