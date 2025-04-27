@@ -23,7 +23,7 @@
 
 ![Application snapshot](https://github.com/user-attachments/assets/77ae5a29-d792-48b7-acd1-616c3c533a03)
 
-Application developed during Cod3r's official Vue.js course at Udemy (no longer available), in order to create a clone of MacOS calculator with Vue.js and the amazing CSS Grid to make development way smoother for elements positioning.
+Application developed during Cod3r's official Vue.js course at Udemy (no longer available), to create a clone of macOS calculator with Vue.js and the amazing CSS Grid to make development way smoother for elements positioning.
 
 [Check out the application running!](https://jcalc2.vercel.app/)
 
