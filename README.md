@@ -61,7 +61,7 @@ $ bun run build   # build files for production
 - [x] Overall layout and design;
 - [x] Traditional calculator operations (`+`, `-`, `*`, `/` and _CLEAR_);
 - [x] Continuous calculations by pressing `=` repeatedly;
-- [ ] Continuous calculations by chaining other operations (without pressing -=`);
+- [ ] Continuous calculations by chaining other operations (without pressing `=`);
 - [ ] Support to keyboard input;
 - [ ] Support to copy & paste by pressing `Ctrl + C` & `Ctrl + V`;
 - [ ] Sounds on typing (with icon to enable/disable);
